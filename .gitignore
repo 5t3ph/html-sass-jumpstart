@@ -1,0 +1,8 @@
+.sass-cache
+.sass-cache/*
+*.scssc
+*.log
+.htaccess
+node_modules/
+public/
+src/css/style.css

@@ -1,0 +1,25 @@
+// stylelint-disable selector-max-type, selector-max-universal
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+  font-size: 16px;
+}
+
+body {
+  @include tdbc-keyboard-focus("a:not(.tdbc-icon-button)", 0.2em);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0.5rem;
+  background-color: tdbc-color(primary);
+  color: tdbc-color(light);
+  font-family: sans-serif;
+  text-align: center;
+}
