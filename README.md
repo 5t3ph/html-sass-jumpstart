@@ -8,11 +8,13 @@
 
 ## Getting Started
 
-Run a find/replace for `tdbc` to update to your preferred prefix (or adjust stylelint settings).
+1. Select "Use this template" to copy this project into your own new repo.
 
-You can customize the `theme` Sass directly, or place overrides to variables at the top of the main `style.scss` file before the `theme` file is imported.
+2. _Optional:_ Run a find/replace for `tdbc` to update to your preferred prefix (or adjust stylelint settings).
 
-Then continue with the `develop` script and build something rad :)
+3. You can customize the `theme` Sass directly, or place overrides to variables at the top of the main `style.scss` file before the `theme` file is imported.
+
+4. Then continue with the `develop` script and build something rad :)
 
 ## Development Scripts
 
