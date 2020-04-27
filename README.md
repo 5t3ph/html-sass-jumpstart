@@ -4,7 +4,9 @@
 
 ## Getting Started
 
-Run a find/replace for `tdbc` to update to your preferred prefix.
+Run a find/replace for `tdbc` to update to your preferred prefix (or adjust stylelint settings).
+
+You can customize the `theme` Sass directly, or place overrides to variables at the top of the main `style.scss` file before the `theme` file is imported.
 
 Then continue with the `develop` script and build something rad :)
 
@@ -17,6 +19,8 @@ Then continue with the `develop` script and build something rad :)
 **`npm run build`**
 
 > Generate minified, autoprefixed CSS for production
+
+Use this as the "Publish command" if needed by hosting such as Netlify.
 
 **`npm run serve`**
 

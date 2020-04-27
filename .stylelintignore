@@ -1,3 +1,5 @@
 **/node_modules
+_reset.scss
+_typography.scss
 public/
 src/index.html
