@@ -16,20 +16,20 @@ $tdbc-alignments: left, center, right !default;
   }
 }
 
-@each $key, $color in $tdbc-brand-colors {
-  .tdbc-background-#{$key} {
-    background-color: $color;
+@each $key in $tdbc-background-colors {
+  .tdbc-background--#{$key} {
+    background-color: tdbc-color(#{$key});
   }
 }
 
 @each $key in $tdbc-ink-colors {
-  .tdbc-ink-#{$key},
-  a.tdbc-ink-#{$key} {
+  .tdbc-ink--#{$key},
+  a.tdbc-ink--#{$key} {
     color: tdbc-color(#{$key});
+  }
 
-    > a:not(.tdbc-button) {
-      color: inherit;
-    }
+  .tdbc-ink--#{$key} > a:not(.tdbc-button) {
+    color: inherit;
   }
 }
 

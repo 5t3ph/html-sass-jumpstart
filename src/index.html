@@ -16,14 +16,14 @@
   </head>
 
   <body>
-    <header class="tdbc-hero tdbc-section tdbc-background-primary">
+    <header class="tdbc-hero tdbc-section tdbc-background--primary">
       <div class="tdbc-container tdbc-content-maxlength">
-        <h1 class="tdbc-ink-light">Minimal Sass/HTML Template Site</h1>
-        <p class="tdbc-lead tdbc-ink-light">
+        <h1 class="tdbc-ink--light">Minimal Sass/HTML Template Site</h1>
+        <p class="tdbc-lead tdbc-ink--light">
           node-sass powered, includes stylelint and prettier, and autoprefix upon build. Develop
           script includes hot-reload via browsersync.
         </p>
-        <p class="tdbc-ink-light">
+        <p class="tdbc-ink--light">
           Created by <a href="https://twitter.com/5t3ph">Stephanie Eckles</a>
         </p>
 
@@ -41,7 +41,7 @@
     <main class="tdbc-container">
       <article class="tdbc-mx-auto tdbc-section--padded">
         <h2>h2: This page shows a composite of available styles</h2>
-        <h3>h3: Gzipped styles < 2kb</h3>
+        <h3>h3: Gzipped minified styles - 2kb</h3>
         <h4>h4: Base minimal theme with easy overrides</h4>
 
         <p class="tdbc-lead">
@@ -54,10 +54,10 @@
         >
       </article>
 
-      <ul class="tdbc-card-container">
+      <ul class="tdbc-column-container">
         <li class="tdbc-card tdbc-card--outlined">
           <div class="tdbc-card__content">
-            <span class="tdbc-card__title tdbc-h3 tdbc-ink-secondary"
+            <span class="tdbc-card__title tdbc-h3 tdbc-ink--secondary"
               >Review the Documentation</span
             >
             <ul>
@@ -71,8 +71,8 @@
         </li>
         <li class="tdbc-card">
           <div class="tdbc-card__content">
-            <span class="tdbc-card__title tdbc-h3 tdbc-ink-primary">Learn Web Development</span>
-            <p class="tdbc-ink-gray">
+            <span class="tdbc-card__title tdbc-h3 tdbc-ink--primary">Learn Web Development</span>
+            <p class="tdbc-ink--gray">
               Go from zero to website launch - no prior development experience required! Through
               this series of 4-14 minute videos, you will learn the essentials of web development.
             </p>
@@ -99,7 +99,7 @@
             </p>
             <a
               href="https://dev.to/5t3ph/equal-height-elements-flexbox-vs-grid-2jk2"
-              class="tdbc-ink-secondary"
+              class="tdbc-ink--secondary"
               >Read the First Post</a
             >
           </div>
@@ -107,7 +107,7 @@
       </ul>
 
       <article id="docs" class="tdbc-mx-auto tdbc-section--padded">
-        <h2 id="setup" class="tdbc-ink-secondary">Initial Setup</h2>
+        <h2 id="setup" class="tdbc-ink--secondary">Initial Setup</h2>
 
         <ol>
           <li class="tdbc-lead"><a href="https://github.com/5t3ph/html-sass-jumpstart">Go to the Github repo</a> and select "Use this template" to copy this project into your own new repo.</li>
@@ -116,7 +116,7 @@
         </ol>
 
 
-        <h2 id="theme" class="tdbc-ink-secondary tdbc-mt-lg">Theme System</h2>
+        <h2 id="theme" class="tdbc-ink--secondary tdbc-mt-lg">Theme System</h2>
         <p class="tdbc-lead">
           The theme system includes base color values, typography sizes, and handful of other reusable
           utility variables.
@@ -137,7 +137,7 @@
           across multiple page templates.
         </p>
 
-        <h3 id="colors" class="tdbc-mt-md tdbc-ink-primary">Colors</h3>
+        <h3 id="colors" class="tdbc-mt-md tdbc-ink--primary">Colors</h3>
 
         <h4>Color Function</h4>
 
@@ -161,13 +161,13 @@
         </style>
         <ul class="tdbc-list-unstyled">
           <li class="tdbc-row tdbc-row--center-alignitems">
-            <span class="docs-color-block tdbc-background-primary tdbc-ink-light">#171392</span>
-            <code>$tdbc-color-primary</code> <code>.tdbc-[ink|background]-primary</code>
+            <span class="docs-color-block tdbc-background--primary tdbc-ink--light">#171392</span>
+            <code>$tdbc-color-primary</code> <code>.tdbc-[ink|background]--primary</code>
           </li>
           <li class="tdbc-row tdbc-row--center-alignitems">
-            <span class="docs-color-block tdbc-background-secondary tdbc-ink-light">#df2b7c</span>
+            <span class="docs-color-block tdbc-background--secondary tdbc-ink--light">#df2b7c</span>
             <code>$tdbc-color-secondary</code>
-            <code>.tdbc-[ink|background]-secondary</code>
+            <code>.tdbc-[ink|background]--secondary</code>
           </li>
           <li class="tdbc-row tdbc-row--center-alignitems">
             <span class="docs-color-block tdbc-background" style="border: 1px solid;">#f9f9f9</span>
@@ -175,30 +175,30 @@
             <code>.tdbc-background</code>
           </li>
           <li class="tdbc-row tdbc-row--center-alignitems">
-            <span class="docs-color-block tdbc-ink-light" style="background-color: #252450;"
+            <span class="docs-color-block tdbc-ink--light" style="background-color: #252450;"
               >* #252450</span
             >
-            <code>$tdbc-color-body</code> <code>.tdbc-ink-text</code>
+            <code>$tdbc-color-body</code> <code>.tdbc-ink--text</code>
           </li>
           <li class="tdbc-row tdbc-row--center-alignitems">
-            <span class="docs-color-block tdbc-ink-light" style="background-color: #5e5d6b;"
+            <span class="docs-color-block tdbc-ink--light" style="background-color: #5e5d6b;"
               >* #5e5d6b</span
             >
-            <code>$tdbc-color-gray</code> <code>.tdbc-ink-gray</code>
+            <code>$tdbc-color-gray</code> <code>.tdbc-[ink|background]--gray</code>
           </li>
           <li class="tdbc-row tdbc-row--center-alignitems">
             <span class="docs-color-block" style="background-color: #fff; border: 1px solid;"
               >#fff</span
             >
-            <code>$tdbc-color-light</code> <code>.tdbc-ink-light</code>
+            <code>$tdbc-color-light</code> <code>.tdbc-ink--light</code>
           </li>
           <li class="tdbc-row tdbc-row--center-alignitems">
             <span
-              class="docs-color-block tdbc-ink-light"
+              class="docs-color-block tdbc-ink--light"
               style="background-color: rgba(0, 0, 0, 0.87);"
               >rgba(black, 0.87)</span
             >
-            <code>$tdbc-color-dark</code> <code>.tdbc-ink-dark</code>
+            <code>$tdbc-color-dark</code> <code>.tdbc-ink--dark</code>
           </li>
           <li class="tdbc-row tdbc-row--center-alignitems">
             Link default:
@@ -224,10 +224,10 @@
         </p>
         <p>
           Add/remove to selectively generate `background` classes: <br />
-          <code>$tdbc-background-colors: primary, secondary, background;</code>
+          <code>$tdbc-background-colors: primary, secondary, background, gray;</code>
         </p>
 
-        <h3 id="typography" class="tdbc-mt-md tdbc-ink-primary">Typography</h3>
+        <h3 id="typography" class="tdbc-mt-md tdbc-ink--primary">Typography</h3>
 
         <p>
           <strong>Update the font family</strong> by removing or changing the Google font stylesheet
@@ -262,7 +262,7 @@
           </li>
         </ul>
 
-        <h2 id="components" class="tdbc-ink-secondary tdbc-mt-lg">Components</h2>
+        <h2 id="components" class="tdbc-ink--secondary tdbc-mt-lg">Components</h2>
 
         <h3 id="buttons" class="tdbc-mt-md">Buttons</h3>
 
@@ -271,19 +271,21 @@
           filled-in button using the primary color as background.
         </p>
 
-        <p>A second variant of <code>.tdbc-button-outlined</code> is available.</p>
-
         <p>
           Add/remove to selectively generate button colors variants: <br />
           <code>$tdbc-button-variants: primary, secondary, light, gray;</code>
         </p>
 
-        <div class="tdbc-row tdbc-row--center-alignitems tdbc-mt-md">
+        <p class="tdbc-mt-md">Apply a color with a class structured as <code>.tdbc-button--[color]</code> where `color` is one of the available variants from the map.</p>
+
+        <div class="tdbc-row tdbc-row--center-alignitems">
           <a href="javascript:;" class="tdbc-button">default</a>
           <a href="javascript:;" class="tdbc-button tdbc-button--secondary">secondary</a>
           <a href="javascript:;" class="tdbc-button tdbc-button--light">light</a>
           <a href="javascript:;" class="tdbc-button tdbc-button--gray">gray</a>
         </div>
+
+        <p class="tdbc-mt-md">A second variant of <code>.tdbc-button-outlined</code> is available.</p>
 
         <div class="tdbc-row tdbc-row--center-alignitems tdbc-mt-sm">
           <a href="javascript:;" class="tdbc-button tdbc-button-outlined">default</a>
@@ -302,6 +304,8 @@
           >
         </div>
 
+        <p class="tdbc-mt-md">Reduce button size with <code>.tdbc-button--small</code>. Add icons (svg preferred) inside <code>span.tdbc-button__icon</code>, with added <code>.tdbc-button__icon--end</code> if it follows the button text.</p>
+
         <div class="tdbc-row tdbc-row--center-alignitems tdbc-mt-sm">
           <a href="javascript:;" class="tdbc-button tdbc-button--small">small</a>
           <a
@@ -309,9 +313,6 @@
             class="tdbc-button tdbc-button--small tdbc-button-outlined tdbc-button-outlined--secondary"
             >small</a
           >
-        </div>
-
-        <div class="tdbc-row tdbc-row--center-alignitems tdbc-mt-sm">
           <a href="javascript:;" class="tdbc-button tdbc-button--small"
             ><span class="tdbc-button__icon">
               <svg class="icon icon-rocket" viewBox="0 0 20 20">
@@ -336,7 +337,7 @@
         <p>It is recommended to use a <code>ul</code> to contain card items.</p>
 
         <p>
-          Use of the class <code>.tdbc-card-container</code> on the containing element will enable a
+          Use of the class <code>.tdbc-column-container</code> on the containing element will enable a
           responsive grid layout.
         </p>
 
@@ -345,7 +346,7 @@
         <div class="tdbc-row">
           <pre>
             <code>
-  &lt;ul class=&quot;tdbc-card-container&quot;&gt;
+  &lt;ul class=&quot;tdbc-column-container&quot;&gt;
     &lt;li class=&quot;tdbc-card&quot;&gt;
       &lt;div class=&quot;tdbc-card__content&quot;&gt;
         &lt;span class=&quot;tdbc-card__title&quot;&gt;
@@ -357,7 +358,7 @@
   &lt;/ul&gt;
             </code>
           </pre>
-          <ul class="tdbc-card-container">
+          <ul class="tdbc-column-container">
             <li class="tdbc-card">
               <div class="tdbc-card__content">
                 <span class="tdbc-card__title">
@@ -376,7 +377,7 @@
         <div class="tdbc-row">
           <pre>
             <code>
-&lt;ul class=&quot;tdbc-card-container&quot;&gt;
+&lt;ul class=&quot;tdbc-column-container&quot;&gt;
   &lt;li class=&quot;tdbc-card&quot;&gt;
     &lt;img src=&quot;http://placecorgi.com/550&quot; alt=&quot;corgi&quot; /&gt;
     &lt;div class=&quot;tdbc-card__content&quot;&gt;
@@ -389,7 +390,7 @@
 &lt;/ul&gt;
             </code>
           </pre>
-          <ul class="tdbc-card-container">
+          <ul class="tdbc-column-container">
             <li class="tdbc-card">
               <img src="http://placecorgi.com/550" alt="corgi" />
               <div class="tdbc-card__content">
@@ -412,7 +413,7 @@
         <div class="tdbc-row">
           <pre>
             <code>
-  &lt;ul class=&quot;tdbc-card-container&quot;&gt;
+  &lt;ul class=&quot;tdbc-column-container&quot;&gt;
     &lt;li class=&quot;tdbc-card tdbc-card--outlined&quot;&gt;
       &lt;div class=&quot;tdbc-card__content&quot;&gt;
         &lt;span class=&quot;tdbc-card__title&quot;&gt;
@@ -424,7 +425,7 @@
   &lt;/ul&gt;
             </code>
           </pre>
-          <ul class="tdbc-card-container">
+          <ul class="tdbc-column-container">
             <li class="tdbc-card tdbc-card--outlined">
               <div class="tdbc-card__content">
                 <span class="tdbc-card__title">
@@ -446,7 +447,7 @@
         <div class="tdbc-row">
           <pre>
             <code>
-  &lt;ul class=&quot;tdbc-card-container&quot;&gt;
+  &lt;ul class=&quot;tdbc-column-container&quot;&gt;
     &lt;li class=&quot;tdbc-card&quot;&gt;
       &lt;div class=&quot;tdbc-card__content&quot;&gt;
         &lt;a class=&quot;tdbc-card__title&quot;&gt;
@@ -458,7 +459,7 @@
   &lt;/ul&gt;
             </code>
           </pre>
-          <ul class="tdbc-card-container">
+          <ul class="tdbc-column-container">
             <li class="tdbc-card">
               <div class="tdbc-card__content">
                 <a href="javascript:;" class="tdbc-card__title">
@@ -470,7 +471,7 @@
           </ul>
         </div>
 
-        <h2 id="layout" class="tdbc-ink-secondary tdbc-mt-lg">Layout</h2>
+        <h2 id="layout" class="tdbc-ink--secondary tdbc-mt-lg">Layout</h2>
 
         <h3 id="element-styles" class="tdbc-mt-md">Inherited Element Styles</h3>
 
@@ -499,9 +500,17 @@
         <h4 class="tdbc-mt-md"><code>.tdbc-container</code></h4>
 
         <p>
-          Suggested to wrap sections you wish to center within the viewport and limit the width
+          A flexbox container with column direction to wrap sections you wish to center within the viewport and limit the width
           (default <code>120ch</code>).
         </p>
+
+        <h4 class="tdbc-mt-md"><code>.tdbc-column-container</code></h4>
+
+        <p>
+          A grid container that responsively allows for 1+ responsive <code>auto-fit</code> columns with <code>grid-gap: 1rem</code> and <code>min-width: 25ch</code>.
+        </p>
+
+        <p>If placed within <code>.tdbc-container</code> there will be up to four columns on large viewports. If not contained, there will be as many as the viewport allows.</p>
 
         <h4 class="tdbc-mt-md"><code>.tdbc-section</code></h4>
 
@@ -521,7 +530,7 @@
         <p>
           Sets up grid layout for viewports of <code>min-width: 80ch</code> to
           <code>grid-auto-flow: column; grid-auto-columns: max-content;</code>. Essentially allows a
-          row of side-by-side elements, including a gap of `1rem`.
+          row of side-by-side elements without width constraints, including a gap of `1rem`.
         </p>
 
         <p><strong>Modifiers available</strong>:</p>
@@ -584,12 +593,57 @@ $tdbc-spacing: (
 
         <p>Margin classes have been selectively created to be general use case without cluttering and bloating the final stylesheet. If you wish to alter them, they are generated in the <code>utilities</code> file.</p>
 
+        <h3 id="element-styles" class="tdbc-mt-md">Recommended Base Page Layout</h3>
+
+        <p>Update colors as desired and layer in other elements as needed.</p>
+
+        <pre><code>
+&lt;header class=&quot;tdbc-hero tdbc-section tdbc-background--gray tdbc-ink--light&quot;&gt;
+  &lt;h1&gt;Page Hero&lt;/h1&gt;
+&lt;/header&gt;
+&lt;main class=&quot;tdbc-container&quot;&gt;
+  &lt;article class=&quot;tdbc-mx-auto tdbc-section--padded&quot;&gt;
+    &lt;h2&gt;Article title&lt;/h2&gt;
+    &lt;p&gt;Cookie jelly-o sweet apple pie croissant tart croissant. Dragée biscuit sweet roll cake halvah chupa chups muffin gummies croissant. Chocolate bar candy pastry brownie powder. Macaroon icing fruitcake tootsie roll cotton candy chocolate sesame snaps pastry.&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/main&gt;
+&lt;footer class=&quot;tdbc-section tdbc-background--gray&quot;&gt;
+  &lt;div class=&quot;tdbc-container tdbc-text-align-center&quot;&gt;
+    &lt;p class=&quot;tdbc-ink--light&quot;&gt;
+      &amp;copy; YYYY Name
+    &lt;/p&gt;
+&lt;/footer&gt;
+        </code></pre>
+
+        <style>
+          .demo-layout {
+            outline: 2px dashed #ccc;
+          }
+        </style>
+        <div class="demo-layout tdbc-content-maxlength tdbc-mt-md">
+          <header class="tdbc-hero tdbc-section tdbc-background--gray tdbc-ink--light">
+            <h1>Page Hero</h1>
+          </header>
+          <main class="tdbc-container">
+            <article class="tdbc-mx-auto tdbc-section--padded">
+              <h2>Article title</h2>
+              <p>Cookie jelly-o sweet apple pie croissant tart croissant. Dragée biscuit sweet roll cake halvah chupa chups muffin gummies croissant. Chocolate bar candy pastry brownie powder. Macaroon icing fruitcake tootsie roll cotton candy chocolate sesame snaps pastry.</p>
+            </article>
+          </main>
+          <footer class="tdbc-section tdbc-background--gray">
+            <div class="tdbc-container tdbc-text-align-center">
+              <p class="tdbc-ink--light">
+                &copy; YYYY Name
+              </p>
+          </footer>
+        </div>
+
         
       </article>
     </main>
-    <footer class="tdbc-section tdbc-background-secondary">
+    <footer class="tdbc-section tdbc-background--secondary">
       <div class="tdbc-container tdbc-text-align-center">
-        <p class="tdbc-ink-light">
+        <p class="tdbc-ink--light">
         &copy; 
         <script type="text/javascript">
           document.write(new Date().getFullYear());

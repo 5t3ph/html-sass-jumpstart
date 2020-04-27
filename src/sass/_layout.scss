@@ -33,6 +33,18 @@ article {
   padding: 1rem;
 }
 
+.tdbc-column-container {
+  display: grid;
+  justify-items: center;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+}
+
+// stylelint-disable-next-line selector-no-qualifying-type, selector-max-type
+ul.tdbc-column-container {
+  padding-left: 0;
+}
+
 .tdbc-section {
   width: 100%;
 
