@@ -2,6 +2,10 @@
 
 > node-sass powered, includes stylelint and prettier, and autoprefix upon build. develop script includes hot-reload via browsersync.
 
+## Includes Minimal Theme and Components
+
+[**View the documentation >**](https://5t3ph.github.io/html-sass-jumpstart/) available on Github pages, as well as the `index.html` file once you load the project.
+
 ## Getting Started
 
 Run a find/replace for `tdbc` to update to your preferred prefix (or adjust stylelint settings).
