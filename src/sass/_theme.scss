@@ -29,7 +29,7 @@ $tdbc-colors: map-merge(
 $tdbc-ink-colors: primary, secondary, text, gray, light, dark !default;
 
 // Add/remove to selectively generate `background` (text color) classes
-$tdbc-background-colors: primary, secondary, background, gray !default;
+$tdbc-background-colors: primary, secondary, background, gray, light !default;
 
 $tdbc-button-variants: primary, secondary, light, gray !default;
 $tdbc-link-color: tdbc-color(primary) !default;

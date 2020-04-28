@@ -1,7 +1,7 @@
 {
   "name": "tdbc-html-sass-jumpstart",
   "description": "node-sass jumpstart with stylelint",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "public/index.html",
   "author": "5t3ph",
   "scripts": {
@@ -18,7 +18,8 @@
     "develop": "npm run copy && npm run scss ; npm run watch & npm run serve",
     "build": "npm run copy && npm run scss ; npm run css",
     "lint": "stylelint 'src/sass/**/*.scss' 'src/sass/**/**/*.scss' 'src/sass/**/**/**/*.scss'",
-    "lint:fix": "stylelint --fix 'src/sass/**/*.scss' 'src/sass/**/**/*.scss' 'src/sass/**/**/**/*.scss'"
+    "lint:fix": "stylelint --fix 'src/sass/**/*.scss' 'src/sass/**/**/*.scss' 'src/sass/**/**/**/*.scss'",
+    "bump": "npm --no-git-tag-version version"
   },
   "dependencies": {
     "autoprefixer": "^9.5.0",

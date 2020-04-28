@@ -18,7 +18,15 @@
   <body>
     <header class="tdbc-hero tdbc-section tdbc-background--primary">
       <div class="tdbc-container tdbc-content-maxlength">
-        <h1 class="tdbc-ink--light">Minimal Sass/HTML Template Site</h1>
+        <style>
+          .docs-version {
+            padding: 0 .5em;
+            border-radius: 2px;
+            display: inline-block;
+          }
+        </style>
+        <span class="docs-version tdbc-background--light tdbc-ink--primary tdbc-mx-auto"><strong>v0.1.1</strong> - <small><em>Updated 4.28.20</em></small></span>
+        <h1 class="tdbc-ink--light tdbc-mt-sm">Minimal Sass/HTML Template Site</h1>
         <p class="tdbc-lead tdbc-ink--light">
           node-sass powered, includes stylelint and prettier, and autoprefix upon build. Develop
           script includes hot-reload via browsersync.
@@ -224,7 +232,7 @@
         </p>
         <p>
           Add/remove to selectively generate `background` classes: <br />
-          <code>$tdbc-background-colors: primary, secondary, background, gray;</code>
+          <code>$tdbc-background-colors: primary, secondary, background, gray, light;</code>
         </p>
 
         <h3 id="typography" class="tdbc-mt-md tdbc-ink--primary">Typography</h3>
