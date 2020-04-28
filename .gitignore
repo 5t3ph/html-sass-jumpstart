@@ -4,3 +4,4 @@
 *.log
 .htaccess
 node_modules/
+public/*
