@@ -27,12 +27,12 @@ h3,
 h4,
 .tdbc-h4 {
   font-size: $tdbc-h4-font-size;
-  color: $tdbc-color-gray;
+  color: tdbc-color(gray);
 }
 
 p,
 li {
-  font-size: 1.05rem;
+  font-size: $tdbc-text-font-size;
 }
 
 p {
@@ -62,8 +62,8 @@ code {
   display: inline-block;
   padding: 0 0.15em;
   background-color: tdbc-color(light);
-  color: tdbc-color(#{gray});
-  border: 1px solid scale-color(tdbc-color(#{gray}), $lightness: 50%);
+  color: tdbc-color(gray);
+  border: 1px solid scale-color(tdbc-color(gray), $lightness: 50%);
   border-radius: 2px;
 }
 

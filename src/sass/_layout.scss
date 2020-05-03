@@ -35,7 +35,6 @@ article {
 
 .tdbc-column-container {
   display: grid;
-  justify-items: center;
   grid-gap: 2em;
   grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
 }

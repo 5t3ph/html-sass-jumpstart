@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>A Website</title>
+    <title>HTML / Sass Jumpstart</title>
+    <meta name="description" content="node-sass powered, includes stylelint and prettier, and autoprefix upon build. Develop script includes hot-reload via browsersync. Themeable and scalable." />
     <link
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩‍💻</text></svg>"
@@ -25,11 +26,11 @@
             display: inline-block;
           }
         </style>
-        <span class="docs-version tdbc-background--light tdbc-ink--primary tdbc-mx-auto"><strong>v0.1.1</strong> - <small><em>Updated 4.28.20</em></small></span>
-        <h1 class="tdbc-ink--light tdbc-mt-sm">Minimal Sass/HTML Template Site</h1>
+        <span class="docs-version tdbc-background--light tdbc-ink--primary tdbc-mx-auto"><strong>v0.2.0</strong> - <small><em>Updated 5.03.20</em></small></span>
+        <h1 class="tdbc-ink--light tdbc-mt-sm">Minimal Sass / HTML Template&nbsp;Site</h1>
         <p class="tdbc-lead tdbc-ink--light">
           node-sass powered, includes stylelint and prettier, and autoprefix upon build. Develop
-          script includes hot-reload via browsersync.
+          script includes hot-reload via browsersync. Themeable and&nbsp;scalable.
         </p>
         <p class="tdbc-ink--light">
           Created by <a href="https://twitter.com/5t3ph">Stephanie Eckles</a>
@@ -98,8 +99,8 @@
           </div>
         </li>
         <li class="tdbc-card">
-          <img src="http://placecorgi.com/400" alt="corgi" />
-          <div class="tdbc-card__content tdbc-text-align-center">
+          <img src="https://moderncss.dev/img/home.png" alt="corgi" />
+          <div class="tdbc-card__content tdbc-text-align--center">
             <span class="tdbc-card__title tdbc-h4">Upgrade Your CSS Game</span>
             <p>
               Review my series "Modern CSS Solutions for Old CSS Problems" to bring your CSS skills
@@ -198,7 +199,7 @@
             <span class="docs-color-block" style="background-color: #fff; border: 1px solid;"
               >#fff</span
             >
-            <code>$tdbc-color-light</code> <code>.tdbc-ink--light</code>
+            <code>$tdbc-color-light</code> <code>.tdbc-[ink|background]--light</code>
           </li>
           <li class="tdbc-row tdbc-row--center-alignitems">
             <span
@@ -241,7 +242,7 @@
           <strong>Update the font family</strong> by removing or changing the Google font stylesheet
           link in the <code>index</code>, and then update the font stack on the
           <code>$tdbc-font-family</code> variable. The included font is
-          <a href="https://fonts.google.com/specimen/Baloo+2">Baloo 2</a>.
+          <a href="https://fonts.google.com/specimen/Baloo+2">Baloo&nbsp;2</a>.
         </p>
         <ul class="tdbc-list-unstyled">
           <li class="tdbc-row tdbc-row--center-alignitems">
@@ -262,11 +263,15 @@
           </li>
           <li class="tdbc-row tdbc-row--center-alignitems">
             <span class="tdbc-lead tdbc-mb-none">lead - utility</span>
-            <code>$tdbc-lead-font-size</code> <code>lead | .tdbc-lead</code>
+            <code>$tdbc-lead-font-size</code> <code>.tdbc-lead</code>
+          </li>
+          <li class="tdbc-row tdbc-row--center-alignitems">
+            <span class="tdbc-mb-none">text</span>
+            <code>$tdbc-text-font-size</code> <code>p | li</code>
           </li>
           <li class="tdbc-row tdbc-row--center-alignitems">
             Text alignment:
-            <code>.tdbc-text-align-[left|center|right]</code>
+            <code>.tdbc-text-align--[left|center|right]</code>
           </li>
         </ul>
 
@@ -351,19 +356,19 @@
 
         <h4 class="tdbc-mt-md">Basic Card</h4>
 
-        <div class="tdbc-row">
+        <div class="tdbc-column-container">
           <pre>
             <code>
-  &lt;ul class=&quot;tdbc-column-container&quot;&gt;
-    &lt;li class=&quot;tdbc-card&quot;&gt;
-      &lt;div class=&quot;tdbc-card__content&quot;&gt;
-        &lt;span class=&quot;tdbc-card__title&quot;&gt;
-          Card Title
-        &lt;/span&gt;
-        &lt;p&gt;Any content here.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
+&lt;ul class=&quot;tdbc-column-container&quot;&gt;
+  &lt;li class=&quot;tdbc-card&quot;&gt;
+    &lt;div class=&quot;tdbc-card__content&quot;&gt;
+      &lt;span class=&quot;tdbc-card__title&quot;&gt;
+        Card Title
+      &lt;/span&gt;
+      &lt;p&gt;Any content here.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
             </code>
           </pre>
           <ul class="tdbc-column-container">
@@ -382,12 +387,12 @@
 
         <p>Insert an image as the first element prior to the content and it will be auto-styled.</p>
 
-        <div class="tdbc-row">
+        <div class="tdbc-column-container">
           <pre>
             <code>
 &lt;ul class=&quot;tdbc-column-container&quot;&gt;
   &lt;li class=&quot;tdbc-card&quot;&gt;
-    &lt;img src=&quot;http://placecorgi.com/550&quot; alt=&quot;corgi&quot; /&gt;
+    &lt;img src=&quot;https://i.picsum.photos/id/237/400/400.jpg&quot; alt=&quot;pupper&quot; /&gt;
     &lt;div class=&quot;tdbc-card__content&quot;&gt;
       &lt;span class=&quot;tdbc-card__title&quot;&gt;
         Card Title
@@ -400,7 +405,7 @@
           </pre>
           <ul class="tdbc-column-container">
             <li class="tdbc-card">
-              <img src="http://placecorgi.com/550" alt="corgi" />
+              <img src="https://i.picsum.photos/id/237/400/400.jpg" alt="pupper" />
               <div class="tdbc-card__content">
                 <span class="tdbc-card__title">
                   Card Title
@@ -418,19 +423,19 @@
           `background-color`.
         </p>
 
-        <div class="tdbc-row">
+        <div class="tdbc-column-container">
           <pre>
             <code>
-  &lt;ul class=&quot;tdbc-column-container&quot;&gt;
-    &lt;li class=&quot;tdbc-card tdbc-card--outlined&quot;&gt;
-      &lt;div class=&quot;tdbc-card__content&quot;&gt;
-        &lt;span class=&quot;tdbc-card__title&quot;&gt;
-          Outlined Card
-        &lt;/span&gt;
-        &lt;p&gt;Any content here.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
+&lt;ul class=&quot;tdbc-column-container&quot;&gt;
+  &lt;li class=&quot;tdbc-card tdbc-card--outlined&quot;&gt;
+    &lt;div class=&quot;tdbc-card__content&quot;&gt;
+      &lt;span class=&quot;tdbc-card__title&quot;&gt;
+        Outlined Card
+      &lt;/span&gt;
+      &lt;p&gt;Any content here.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
             </code>
           </pre>
           <ul class="tdbc-column-container">
@@ -452,19 +457,19 @@
           allowing interaction on any paragraph content.
         </p>
 
-        <div class="tdbc-row">
+        <div class="tdbc-column-container">
           <pre>
             <code>
-  &lt;ul class=&quot;tdbc-column-container&quot;&gt;
-    &lt;li class=&quot;tdbc-card&quot;&gt;
-      &lt;div class=&quot;tdbc-card__content&quot;&gt;
-        &lt;a class=&quot;tdbc-card__title&quot;&gt;
-          Clickable Card
-        &lt;/a&gt;
-        &lt;p&gt;Any content here.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
+&lt;ul class=&quot;tdbc-column-container&quot;&gt;
+  &lt;li class=&quot;tdbc-card&quot;&gt;
+    &lt;div class=&quot;tdbc-card__content&quot;&gt;
+      &lt;a class=&quot;tdbc-card__title&quot;&gt;
+        Clickable Card
+      &lt;/a&gt;
+      &lt;p&gt;Any content here.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
             </code>
           </pre>
           <ul class="tdbc-column-container">
@@ -601,7 +606,7 @@ $tdbc-spacing: (
 
         <p>Margin classes have been selectively created to be general use case without cluttering and bloating the final stylesheet. If you wish to alter them, they are generated in the <code>utilities</code> file.</p>
 
-        <h3 id="element-styles" class="tdbc-mt-md">Recommended Base Page Layout</h3>
+        <h3 id="base-layout" class="tdbc-mt-md">Recommended Base Page Layout</h3>
 
         <p>Update colors as desired and layer in other elements as needed.</p>
 
@@ -616,7 +621,7 @@ $tdbc-spacing: (
   &lt;/article&gt;
 &lt;/main&gt;
 &lt;footer class=&quot;tdbc-section tdbc-background--gray&quot;&gt;
-  &lt;div class=&quot;tdbc-container tdbc-text-align-center&quot;&gt;
+  &lt;div class=&quot;tdbc-container tdbc-text-align--center&quot;&gt;
     &lt;p class=&quot;tdbc-ink--light&quot;&gt;
       &amp;copy; YYYY Name
     &lt;/p&gt;
@@ -639,7 +644,7 @@ $tdbc-spacing: (
             </article>
           </main>
           <footer class="tdbc-section tdbc-background--gray">
-            <div class="tdbc-container tdbc-text-align-center">
+            <div class="tdbc-container tdbc-text-align--center">
               <p class="tdbc-ink--light">
                 &copy; YYYY Name
               </p>
@@ -650,7 +655,7 @@ $tdbc-spacing: (
       </article>
     </main>
     <footer class="tdbc-section tdbc-background--secondary">
-      <div class="tdbc-container tdbc-text-align-center">
+      <div class="tdbc-container tdbc-text-align--center">
         <p class="tdbc-ink--light">
         &copy; 
         <script type="text/javascript">

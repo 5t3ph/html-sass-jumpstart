@@ -63,8 +63,9 @@
     }
   }
 
+  // stylelint-disable max-nesting-depth
   @each $key in $tdbc-button-variants {
-    $color: tdbc-color(#{$key});
+    $color: tdbc-color($key);
 
     @if ($key != "primary") {
       &--#{$key} {
@@ -101,4 +102,5 @@
       }
     }
   }
+  // stylelint-enable
 }

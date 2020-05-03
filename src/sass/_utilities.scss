@@ -5,7 +5,7 @@
 $tdbc-alignments: left, center, right !default;
 
 @each $alignment in $tdbc-alignments {
-  .tdbc-text-align-#{$alignment} {
+  .tdbc-text-align--#{$alignment} {
     text-align: #{$alignment};
 
     @if ($alignment == "center") {
@@ -18,7 +18,7 @@ $tdbc-alignments: left, center, right !default;
 
 @each $key in $tdbc-background-colors {
   .tdbc-background--#{$key} {
-    background-color: tdbc-color(#{$key});
+    background-color: tdbc-color($key);
   }
 }
 
