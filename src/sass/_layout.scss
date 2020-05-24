@@ -21,6 +21,11 @@ footer {
 
 article {
   max-width: 80ch;
+
+  > img {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 // stylelint-enable
 
@@ -61,7 +66,7 @@ ul.tdbc-column-container {
 .tdbc-hero {
   display: grid;
   min-height: 40vh;
-  place-items: center;
+  place-content: center;
   padding-top: 10vh;
   padding-bottom: 10vh;
   text-align: center;
@@ -83,4 +88,11 @@ ul.tdbc-column-container {
   &--center-alignitems {
     align-items: center;
   }
+}
+
+// stylelint-disable-next-line selector-max-type
+hr {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  border: 1px solid tdbc-color(secondary);
 }
