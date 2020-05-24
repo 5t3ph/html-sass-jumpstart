@@ -1,4 +1,4 @@
-# HTML / SASS Jumpstart
+# HTML / Sass Jumpstart
 
 > node-sass powered, includes stylelint and prettier, and autoprefix upon build. develop script includes hot-reload via browsersync.
 
@@ -45,3 +45,9 @@ Linting is provided by [Stylelint](https://stylelint.io/) and rules are extended
 **`npm run lint:fix`**
 
 > Run stylelint with the fix flag to attempt to resolve found errors
+
+## Feedback welcome!
+
+You can [file it as an issue](https://github.com/5t3ph/html-sass-jumpstart/issues).
+
+[![Buy me a coffee](https://cdn.buymeacoffee.com/buttons/default-violet.png)](https://www.buymeacoffee.com/moderncss)
