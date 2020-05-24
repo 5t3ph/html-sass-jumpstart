@@ -1,7 +1,7 @@
 {
   "name": "tdbc-html-sass-jumpstart",
   "description": "node-sass jumpstart with stylelint",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "public/index.html",
   "author": "5t3ph",
   "scripts": {
@@ -22,18 +22,18 @@
     "bump": "npm --no-git-tag-version version"
   },
   "dependencies": {
-    "autoprefixer": "^9.5.0",
+    "autoprefixer": "^9.8.0",
     "browser-sync": "^2.26.3",
     "copyfiles": "^2.1.0",
     "cssnano": "^4.1.10",
-    "node-sass": "^4.11.0",
-    "onchange": "^7.0.1",
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.2",
     "postcss-cli": "^7.1.1",
-    "stylelint": "^13.3.3",
+    "stylelint": "^13.5.0",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.0.0",
-    "stylelint-scss": "^3.9.3",
+    "stylelint-scss": "^3.17.2",
     "stylelint-selector-bem-pattern": "^2.1.0"
   },
   "browserslist": [
