@@ -74,24 +74,18 @@ a:not(.tdbc-button) {
 pre,
 code {
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-  font-size: 0.75em;
   font-weight: bold;
 }
 
 code {
-  display: inline-block;
+  display: inline-flex;
   padding: 0.15em;
   background-color: tdbc-color(light);
+  font-size: 0.75em;
   color: tdbc-color(gray);
   border: 1px solid scale-color(tdbc-color(gray), $lightness: 50%);
   border-radius: 2px;
-  overflow-x: scroll;
   line-height: 1.1;
-}
-
-p code,
-li code {
-  margin-bottom: -0.3em;
 }
 
 pre {
@@ -102,10 +96,9 @@ pre {
     display: block;
     padding: 0 1rem;
     white-space: pre-wrap;
-    width: 100%;
-    max-width: calc(100vw - 2rem);
     font-size: 0.85rem;
     line-height: 1.4;
+    overflow-x: auto;
   }
 }
 
