@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML / Sass Jumpstart</title>
-    <meta name="description" content="node-sass powered, includes stylelint and prettier, and autoprefix upon build. Develop script includes hot-reload via browsersync. Themeable and scalable." />
+    <meta name="description" content="dart sass powered, includes stylelint and prettier, and autoprefix upon build. Develop script includes hot-reload via browsersync. Themeable and scalable." />
     <link
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩‍💻</text></svg>"
@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <header class="tdbc-hero tdbc-section tdbc-background--primary">
+    <header class="tdbc-hero tdbc-background--primary">
       <div class="tdbc-container tdbc-content-maxlength">
         <style>
           .docs-version {
@@ -27,10 +27,10 @@
             display: inline-block;
           }
         </style>
-        <span class="docs-version tdbc-background--light tdbc-ink--primary tdbc-mx-auto"><strong>v0.3.1</strong> - <small><em>Updated 5.26.20</em></small></span>
+        <span class="docs-version tdbc-background--light tdbc-ink--primary tdbc-mx-auto"><strong>v0.4.0</strong> - <small><em>Updated 9.7.20</em></small></span>
         <h1 class="tdbc-ink--light tdbc-mt-sm">Minimal Sass / HTML Template&nbsp;Site</h1>
         <p class="tdbc-lead tdbc-ink--light">
-          node-sass powered, includes stylelint and prettier, and autoprefix upon build. Develop
+          dart sass powered, includes stylelint and prettier, and autoprefix upon build. Develop
           script includes hot-reload via browsersync. Themeable and&nbsp;scalable.
         </p>
         <p class="tdbc-ink--light">
@@ -51,7 +51,7 @@
     <main class="tdbc-container">
       <article class="tdbc-mx-auto tdbc-section--padded">
         <h2>h2: This page shows a composite of available styles</h2>
-        <h3>h3: Gzipped minified styles - 2kb</h3>
+        <h3>h3: Gzipped minified styles - 2.2kb</h3>
         <h4>h4: Base minimal theme with easy overrides</h4>
 
         <p class="tdbc-lead">
@@ -66,7 +66,7 @@
         <blockquote class="tdbc-mt-lg">
           <h3 class="tdbc-h4">Colophon</h3>
           <p>
-            Hi! I'm Stephanie Eckles - @5t3ph on <a href="https://twitter.com/5t3ph">Twitter</a>, <a href="https://github/5t3ph">Github</a>, <a href="https://codepen.com/5t3ph">CodePen</a>, and <a href="https://dev.to/5t3ph">DEV</a>. You may know me as the author of <a href="https://moderncss.dev">ModernCSS.dev</a>. I can also be found on <a href="https://egghead.io/instructors/stephanie-eckles">egghead as an instructor</a>. I've been a frontend developer for 13+ years, and this jumpstart is a mashup of things learned and tested. I hope you find it useful, and I'm happy to hear any <a href="https://github.com/5t3ph/html-sass-jumpstart/issues">feedback</a>!
+            Hi! I'm Stephanie Eckles - @5t3ph on <a href="https://twitter.com/5t3ph">Twitter</a>, <a href="https://github/5t3ph">Github</a>, <a href="https://codepen.com/5t3ph">CodePen</a>, and <a href="https://dev.to/5t3ph">DEV</a>. You may know me as the author of <a href="https://moderncss.dev">ModernCSS.dev</a> and creator of <a href="https://stylestage.dev">StyleStage.dev</a>. I can also be found on <a href="https://egghead.io/instructors/stephanie-eckles">egghead as an instructor</a>. I've been a frontend developer for 13+ years, and this jumpstart is a mashup of things learned and tested. I hope you find it useful, and I'm happy to hear any <a href="https://github.com/5t3ph/html-sass-jumpstart/issues">feedback</a>!
           </p>
         </blockquote>
 
@@ -224,7 +224,7 @@
           </li>
           <li class="tdbc-row tdbc-row--center-alignitems">
             Link default:
-            <code>$tdbc-link-color: tdbc-color(primary)</code>
+            <code>$tdbc-link-color: tdbc-color("primary")</code>
           </li>
         </ul>
 
@@ -242,11 +242,11 @@
         </p>
         <p>
           Add/remove to selectively generate `ink` (text color) classes: <br />
-          <code>$tdbc-ink-colors: primary, secondary, text, gray, light, dark;</code>
+          <code>$tdbc-ink-colors: "primary", "secondary", "text", "gray", "light", "dark";</code>
         </p>
         <p>
           Add/remove to selectively generate `background` classes: <br />
-          <code>$tdbc-background-colors: primary, secondary, background, gray, light;</code>
+          <code>$tdbc-background-colors: "primary", "secondary", "background", "gray", "light";</code>
         </p>
 
         <h3 id="typography" class="tdbc-mt-md tdbc-ink--primary">Typography</h3>
@@ -299,7 +299,7 @@
 
         <p>
           Add/remove to selectively generate button colors variants: <br />
-          <code>$tdbc-button-variants: primary, secondary, light, gray;</code>
+          <code>$tdbc-button-variants: "primary", "secondary", "light", "gray";</code>
         </p>
 
         <p class="tdbc-mt-md">Apply a color with a class structured as <code>.tdbc-button--[color]</code> where `color` is one of the available variants from the map.</p>
@@ -405,7 +405,7 @@
             <code>
 &lt;ul class=&quot;tdbc-column-container&quot;&gt;
   &lt;li class=&quot;tdbc-card&quot;&gt;
-    &lt;img src=&quot;https://i.picsum.photos/id/237/400/400.jpg&quot; alt=&quot;pupper&quot; /&gt;
+    &lt;img src=&quot;https://source.unsplash.com/400x400/?corgi&quot; alt=&quot;pupper&quot; /&gt;
     &lt;div class=&quot;tdbc-card__content&quot;&gt;
       &lt;span class=&quot;tdbc-card__title&quot;&gt;
         Card Title
@@ -418,7 +418,7 @@
           </pre>
           <ul class="tdbc-column-container">
             <li class="tdbc-card">
-              <img src="https://i.picsum.photos/id/237/400/400.jpg" alt="pupper" />
+              <img src="https://source.unsplash.com/400x400/?corgi" alt="pupper" />
               <div class="tdbc-card__content">
                 <span class="tdbc-card__title">
                   Card Title
@@ -617,7 +617,7 @@ $tdbc-spacing: (
         <p>Update colors as desired and layer in other elements as needed.</p>
 
         <pre><code>
-&lt;header class=&quot;tdbc-hero tdbc-section tdbc-background--gray tdbc-ink--light&quot;&gt;
+&lt;header class=&quot;tdbc-hero tdbc-background--gray tdbc-ink--light&quot;&gt;
   &lt;h1&gt;Page Hero&lt;/h1&gt;
 &lt;/header&gt;
 &lt;main class=&quot;tdbc-container&quot;&gt;
@@ -640,7 +640,7 @@ $tdbc-spacing: (
           }
         </style>
         <div class="demo-layout tdbc-content-maxlength tdbc-mt-md">
-          <header class="tdbc-hero tdbc-section tdbc-background--gray tdbc-ink--light">
+          <header class="tdbc-hero tdbc-background--gray tdbc-ink--light">
             <h1>Page Hero</h1>
           </header>
           <main class="tdbc-container">

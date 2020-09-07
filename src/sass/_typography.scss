@@ -32,7 +32,7 @@ h3,
 h4,
 .tdbc-h4 {
   font-size: $tdbc-h4-font-size;
-  color: tdbc-color(gray);
+  color: tdbc-color("gray");
 }
 
 p,
@@ -80,10 +80,10 @@ code {
 code {
   display: inline-flex;
   padding: 0.15em;
-  background-color: tdbc-color(light);
+  background-color: tdbc-color("light");
   font-size: 0.75em;
-  color: tdbc-color(gray);
-  border: 1px solid scale-color(tdbc-color(gray), $lightness: 50%);
+  color: tdbc-color("gray");
+  border: 1px solid scale-color(tdbc-color("gray"), $lightness: 50%);
   border-radius: 2px;
   line-height: 1.1;
 }
@@ -106,8 +106,8 @@ blockquote {
   margin-left: 0;
   margin-right: 0;
   padding-left: 1.5rem;
-  border-left: 2px solid tdbc-color(secondary);
-  color: tdbc-color(gray);
+  border-left: 2px solid tdbc-color("secondary");
+  color: tdbc-color("gray");
 
   &,
   p {
