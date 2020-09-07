@@ -3,7 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: tdbc-color(background);
+  background-color: tdbc-color("background");
   color: $tdbc-color-body;
   font-family: $tdbc-font-family;
 }
@@ -94,5 +94,5 @@ ul.tdbc-column-container {
 hr {
   margin-top: 4rem;
   margin-bottom: 4rem;
-  border: 1px solid tdbc-color(secondary);
+  border: 1px solid tdbc-color("secondary");
 }

@@ -1,6 +1,6 @@
 # HTML / Sass Jumpstart
 
-> node-sass powered, includes stylelint and prettier, and autoprefix upon build. develop script includes hot-reload via browsersync.
+> dart sass powered, includes stylelint and prettier, and autoprefix upon build. develop script includes hot-reload via browsersync.
 
 ## Includes Minimal Theme and Components
 
@@ -18,7 +18,7 @@
 
 ## Development Scripts
 
-**`npm run develop`**
+**`npm start`**
 
 > Serve with hot reload at localhost:1337
 
